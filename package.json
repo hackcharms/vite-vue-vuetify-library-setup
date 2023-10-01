@@ -1,0 +1,37 @@
+{
+  "name": "module-x",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./dist/module-x.cjs",
+  "module": "./dist/module-x.js",
+  "exports": {
+    ".": {
+      "require": "./dist/module-x.cjs",
+      "import": "./dist/module-x.js",
+      "browser": "./dist/module-x.umd.cjs"
+    },
+    "./styles": "./dist/style.css"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build -c vite-build.config.js",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "path": "^0.12.7",
+    "vite-plugin-dts": "^3.6.0",
+    "vite-plugin-vuetify": "^1.0.2",
+    "vue": "^3.3.4",
+    "vuetify": "^3.3.19"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vue-tsc": "^1.8.5"
+  }
+}
