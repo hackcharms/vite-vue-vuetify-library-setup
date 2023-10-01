@@ -1,13 +1,4 @@
-import { ClassDetails, UserType } from "./types";
-
-const classDetails: ClassDetails = {
-  name:'XI',
-  divisions:2
-}
-const user: UserType = {
-  name: "Zubair",
-  age: 23,
-};
-
-export { user, classDetails };
-export default { user, classDetails };
+import "./scss/index.module.scss";
+export * from "./components";
+import * as Utils from "./utils";
+export default Utils;

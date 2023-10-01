@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import moduleX from '../src'
-console.log(moduleX)
+import { HelloWorld } from 'module-x';
+import styles from 'module-x'
+// import { HelloWorld } from '../src/components/'
 </script>
 
 <template>
@@ -12,8 +12,9 @@ console.log(moduleX)
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
-  </div>‸
-  <HelloWorld msg="Vite + Vue" />
+  </div>
+  <HelloWorld  title="Info" text="Hello World I'm here to test you"  >
+  </HelloWorld>
 </template>
 
 <style scoped>
