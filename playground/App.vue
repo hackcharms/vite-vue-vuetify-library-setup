@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { HelloWorld } from 'module-x';
-import styles from 'module-x'
+import 'module-x/styles'
 // import { HelloWorld } from '../src/components/'
 </script>
 
