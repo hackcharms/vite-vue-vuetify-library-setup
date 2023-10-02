@@ -1,4 +1,42 @@
-# Vue 3 + TypeScript + Vite
+# Vue 3 + TypeScript + Vite module development setup
+
+### Director structure 
+```
+VUE-MODULE
+ ┣ playground 
+ ┃  ┣ assets
+ ┃  ┃  ┗ vue.svg
+ ┃  ┣ components
+ ┃  ┃  ┗ HelloWorld.vue
+ ┃  ┣ public
+ ┃  ┃  ┗ vite.svg
+ ┃  ┣ App.vue
+ ┃  ┣ index.html
+ ┃  ┣ main.ts
+ ┃  ┣ style.css
+ ┃  ┗ vite-env.d.ts
+ ┣ src
+ ┃  ┣ components
+ ┃  ┃  ┣ HelloWorld.vue
+ ┃  ┃  ┗ index.ts
+ ┃  ┣ plugins
+ ┃  ┃  ┗ index.ts
+ ┃  ┣ scss
+ ┃  ┃  ┗ index.scss
+ ┃  ┣ types
+ ┃  ┃  ┗ index.ts
+ ┃  ┣ utils
+ ┃  ┃  ┗ index.ts
+ ┃  ┗ index.ts
+ ┣ .gitignore
+ ┣ package.json
+ ┣ README.md
+ ┣ tsconfig.json
+ ┣ tsconfig.node.json
+ ┣ vite-build.config.ts
+ ┣ vite.config.ts
+ ┗ yarn.lock
+```
 
 This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
 
